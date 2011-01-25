@@ -1,0 +1,166 @@
+/*
+  #####################################################################
+
+  jQTouch iCal, 1.0 alpha
+  @created by
+    Bruno Alexandre, 26.03.2010
+    twitter.com/balexandre
+    balexandre.com
+    bruno.in.dk [at] gmail.com
+
+  ######################################################################
+
+  14.07.2010 - http://code.google.com/p/jqtouch-ical/issues/detail?id=1
+    Disabled the bottom bar to show the click area in color
+
+  ######################################################################
+*/
+.jqt_calendar {
+  color:#3F4E5E;
+  float:left;
+  background-color: #fff;
+  width: 320px;
+}
+.jqt_calendar table {
+  border-collapse: separate;
+  /*border: 0px solid #9DABCE;
+  border-width: 0px 0px 1px 1px;*/
+  /*margin: 10px auto;*/
+  font-size: 20px;
+}
+.jqt_calendar td {
+  background:url(images/cells.png) repeat scroll 0 0 transparent;
+  border-color:#A3A7AF;
+  border-style:solid;
+  border-width:0 1px 1px 0;
+  font-weight:bold;
+  height:43px;
+  position:relative;
+  text-align:center;
+  vertical-align:middle;
+  width:45px;
+}
+.jqt_calendar td:last-child, .jqt_calendar th:last-child {
+  border-right: 0px;
+/*  width: 44px;*/
+}
+.jqt_calendar td.padding {
+  background: url(images/calpad.jpg);
+}
+.jqt_calendar td.hasevent {
+
+}
+.jqt_calendar td.prevmonth, .jqt_calendar td.nextmonth {
+  color: #89909A;
+}
+
+.jqt_calendar td.today {
+  background-position: 90px 0px;
+  color: white;
+}
+.jqt_calendar td.selected {
+  background-position: 45px 0px;
+  color: white;
+}
+
+.jqt_calendar td.date_has_event {
+  background-position: 0px -43px;
+}
+.jqt_calendar td.today.date_has_event {
+  background-position: 90px 43px;
+  color: white;
+}
+.jqt_calendar td.selected.date_has_event {
+  background-position: 45px 43px;
+  color: white;
+}
+
+.jqt_calendar thead {
+  background: #fff url(images/header.png) repeat-x;
+}
+.jqt_calendar thead  th {
+  font-size: 8px; vertical-align: bottom; padding-bottom: 3px; color: #6c6c6c;
+  text-align:center;
+  height: 40px;
+}
+.jqt_calendar thead  th:first-child {
+  background-image: url(images/header_left.png);
+  cursor: pointer;
+}
+.jqt_calendar thead  th:last-child {
+  background-image: url(images/header_right.png);
+  cursor: pointer;
+}
+.jqt_calendar tfoot th {
+  background: #fff url(images/footer.png) repeat-x;
+  height: 21px; border-bottom:0;
+}
+.jqt_calendar thead th span {
+  font-size:20px;
+  height:30px;
+  left:45px;
+  position:absolute;
+  text-align:center;
+  top:50px;
+  width:230px;
+  z-index:999;
+}
+
+/*** Events ***/
+#jqt .jqt_calendar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 320px;
+  -webkit-border-radius: 0px;
+}
+#jqt .jqt_calendar ul li {
+	border:none !important;
+  min-height: 30px; font-weight: bold;
+}
+.jqt_calendar ul li span {
+  font-size: 10px;
+  padding-right: 10px;
+}
+.jqt_calendar ul li a {
+  display: inline;
+}
+.jqt_calendar ul .no-event {
+  color: #ccc;
+  text-align: center;
+  height: 65px;
+}
+
+.jqt_calendar .bottom-bar {
+  background:transparent url(images/bottom_bar.png) no-repeat scroll 0 0;
+  bottom:0;
+  height:44px;
+  margin-top: 1px;
+  width:320px;
+}
+
+.jqt_calendar .bottom-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 320px; height: 40px;
+}
+.jqt_calendar .bottom-bar li {
+  background: transparent;
+  display: -webkit-inline-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin-top: 5px;
+}
+.jqt_calendar .bottom-bar .bottom-bar-today {
+  width: 56px;
+  margin: 0 12px 0 6px;
+}
+.jqt_calendar .bottom-bar .bottom-bar-list,
+.jqt_calendar .bottom-bar .bottom-bar-day,
+.jqt_calendar .bottom-bar .bottom-bar-month {
+  width: 50px;
+}
