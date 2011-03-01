@@ -36,7 +36,8 @@
 										date	: new Date(),
 										days	: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
 										months: ['January','February','March','April','May','June','July','August','September','October','November','December'],
-										weekstart: 1
+										weekstart: 1,
+										noEvents: 'No Events'
 								}
 						var settings = $.extend({}, defaults, options);
 
@@ -239,7 +240,7 @@
 					}
 					jQuery.fn.getNoEvents = function() {
   					$(this).find('.events').empty();
-  					$el.find('.events').empty().append("<li class='no-event'>No Events</li>");
+  					$el.find('.events').empty().append("<li class='no-event'>"+$el.data('settings').noEvents+"</li>");
 					}
 					jQuery.fn.generateEvents = function(year, month, day) {
 

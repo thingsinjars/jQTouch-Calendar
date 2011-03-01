@@ -39,3 +39,5 @@ You can also call getCalendar with an options object e.g.
    * _(default: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'])_
  * weekstart: index of the position in the days array on which the week is to start
    * _(default: 1)_
+ * noEvents: text to show at days with no events
+   * _(default: 'No Events')_
