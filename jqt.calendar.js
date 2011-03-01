@@ -335,7 +335,7 @@
 						var newDay = new Date(year, (month-1)+delta, day);
 
 
-						$el.getCalendar({date:newDay});
+						$el.getCalendar( $.extend({}, $el.data('settings'), {date:newDay}) );
 					}
 
 
