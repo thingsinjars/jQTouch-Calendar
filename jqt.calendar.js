@@ -89,7 +89,7 @@
 								var time_marker_index = task_datetime.indexOf('T');
 								var task_day = task_datetime.substring(0, time_marker_index).replace(/-0/g,'-');
 								var task_time = task_datetime.substring(time_marker_index+1,task_datetime.length-1);
-								var task_text = $(this).text();
+								var task_text = $(this).html();
 								if(!$.isArray(events[task_day])) {
 									events[task_day] = []
 								}
