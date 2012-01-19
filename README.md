@@ -1,28 +1,30 @@
 jQTouch Calendar Extension
 ==========================
 
-Based on jQTouch iCal by Bruno Alexandre (http://code.google.com/p/jqtouch-ical/)
+This is a jQTouch extension to generate an iCal-like interface from basic HTML markup.
 
-This is the jQTouch iCal plugin taken apart, refactored into an extension and put back together again. The CSS is pretty much the same but most of the internals are different now.
-	
+Based on [jQTouch iCal by Bruno Alexandre](http://code.google.com/p/jqtouch-ical/)
+
 HTML
 ----
 Create a list of calendar entries like so:
+
     <div id="any_id">
       <ul>
         <li><time datetime="2011-01-25T21:20Z">Task text here</time></li>
         <li><time datetime="2011-01-25T23:00Z">More task text here</time></li>
         <li><time datetime="2011-03-02T09:30Z">Another task here</time></li>
-		  </ul>
+      </ul>
     </div>
 
 Script
 ------
 Use this to initialise:
-	  <script type="text/javascript" charset="utf-8">
-		  var jQT = new $.jQTouch({});
-		  $(function() {
-			  $('#any_id').getCalendar(); //This is the important bit
+
+    <script type="text/javascript" charset="utf-8">
+      var jQT = new $.jQTouch({});
+      $(function() {
+        $('#any_id').getCalendar(); //This is the important bit
       });
     </script>
 
