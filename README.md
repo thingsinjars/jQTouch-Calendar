@@ -1,6 +1,6 @@
-#DEPRECATED
+# DEPRECATED
 
-* This project is no longer maintained. If there's anything useful here, feel free to take it. *
+*This project is no longer maintained. If there's anything useful here, feel free to take it.*
 
 jQTouch Calendar Extension
 ==========================
